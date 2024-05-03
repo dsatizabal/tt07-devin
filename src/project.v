@@ -19,16 +19,16 @@ module tt_um_devin (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-oscillator_20MHZ oscillator_20MHZ(
-	.VCC(VPWR),
-	.VSS(VGND),
-	.OUT(ua[0])
-);
-osillator_21MHZ oscillator_21MHZ
-	.VCC(VPWR),
-	.VSS(VGND),
-	.OUT(ua[1])
-);
+    oscillator_20MHZ oscillator_20MHZ(
+	    .VCC(VPWR),
+	    .VSS(VGND),
+	    .OUT(ua[0])
+    );
+    oscillator_21MHZ oscillator_21MHZ(
+	    .VCC(VPWR),
+	    .VSS(VGND),
+	    .OUT(ua[1])
+    );
 
     assign uo_out[0] = VGND;
     assign uo_out[1] = VGND;
